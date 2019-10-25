@@ -1,9 +1,10 @@
 # Ten things I wish I knew when starting my PhD in Statistics
 
-Slides from a recent talk, `thirteenthings.pdf`
+Slides from a recent talk, `thirteenthings.pdf` (there are more than ten things).
 
 ## Building the slides
 
+The slides were made in R Markdown. 
 To compile, run the script
 
 ```

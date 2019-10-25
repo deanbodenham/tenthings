@@ -1,0 +1,116 @@
+% owes a lot to:
+% https://kbroman.org/blog/2013/10/07/better-looking-latexbeamer-slides/
+
+% make aspect ratio 16 x 9
+\usepackage[orientation=landscape,size=custom,width=16,height=9,scale=0.5,debug]{beamerposter}
+
+% theme
+%\usetheme{Goettingen}
+\usetheme{default}
+
+%\usecolortheme{dove}
+\usecolortheme{default}
+
+% animation from:
+% https://stackoverflow.com/questions/9009771/is-it-possible-to-embed-animated-gifs-in-pdfs
+\usepackage{animate}
+
+% page numbers
+%\setbeamertemplate{footline}[frame number]
+
+%%https://tex.stackexchange.com/questions/333587/beamer-frame-number-without-total
+%\setbeamertemplate{footline}{
+%  \hfill%
+%  \usebeamercolor[fg]{page number in head/foot}%
+%  \usebeamerfont{page number in head/foot}%
+%  \setbeamertemplate{page number in head/foot}[framenumber]%
+%  % modified spacing, but hard to turn off for title page  
+%  \usebeamertemplate*{page number in head/foot}\kern2em\vskip10pt%
+%}
+
+
+%\usefonttheme{professionalfonts} % using non standard fonts for beamer
+%\usefonttheme{serif} % default family is serif
+%\usepackage{fontspec}
+%\setmainfont{Liberation Serif}
+
+%    theme: "default"
+%    colortheme: "lily"
+%    fonttheme: "professionalfonts"
+
+
+% Resource
+% https://kbroman.org/Tools4RR/assets/lectures/12_talks_posters_withnotes.pdf
+
+%\definecolor{title}{RGB}{107,174,214}
+%\setbeamercolor{titlelike}{fg=title}
+%
+%\definecolor{subtitle}{RGB}{102,255,204}
+%\setbeamercolor{subtitle}{fg=subtitle}
+%
+%\definecolor{foreground}{RGB}{255,255,255}
+%\definecolor{background}{RGB}{24,24,24}
+
+% white
+%#FFFFFF
+\definecolor{foreground}{HTML}{FFFFFF}
+%\definecolor{foreground}{RGB}{255,255,255}
+
+%sort of black
+%#181818
+\definecolor{background}{HTML}{181818}
+%\definecolor{background}{RGB}{24,24,24}
+
+%#6BAED6
+\definecolor{title}{RGB}{107,174,214}
+\definecolor{subtitle}{RGB}{102,255,204}
+\definecolor{hilit}{RGB}{102,255,204}
+\definecolor{lolit}{RGB}{155,155,155}
+\setbeamercolor{titlelike}{fg=title}
+\setbeamercolor{subtitle}{fg=subtitle}
+\setbeamercolor{institute}{fg=lolit}
+\setbeamercolor{item}{fg=background} % color of bullets
+%\setbeamercolor{subitem}{fg=lolit}
+%\setbeamercolor{itemize/enumerate subbody}{fg=lolit}
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{itemize subitem}[circle]
+%\setbeamerfont{itemize/enumerate subbody}{size=\footnotesize}
+%\setbeamerfont{itemize/enumerate subitem}{size=\footnotesize}
+%\newcommand{\hilit}{\color{hilit}}
+%\newcommand{\lolit}{\color{lolit}}
+
+
+% to make background black with white writing
+\setbeamercolor{normal text}{fg=foreground,bg=background}
+\setbeamercolor{item}{fg=foreground} % color of bullets
+
+%\setbeamerfont{section in head/foot}{size=\Huge}
+
+% make frametitles larger
+\setbeamerfont{frametitle}{size=\Large}
+
+% maker sections larger
+%\setbeamerfont{section title}{size=\huge,series=\bfseries}
+\setbeamerfont{section title}{size=\huge}
+\setbeamerfont{title}{size=\huge}
+\setbeamerfont{author}{size=\Large}
+\setbeamerfont{date}{size=\large}
+
+%centre the frametitle
+%\setbeamertemplate{frametitle}[default][center]
+%also with vskip
+\setbeamertemplate{frametitle}{ \vskip10pt \centerline{\insertframetitle} }
+
+\setbeamertemplate{normal text}{centered frame}
+
+%\setbeamertemplate{footline}{%
+%    \raisebox{5pt}{\makebox[\paperwidth]{\hfill\makebox[20pt]{\color{gray}
+%          \scriptsize\insertframenumber}}}\hspace*{5pt}}
+%
+%\setbeamertemplate{footline}{}
+%
+%\newcommand{\addnumbers}{
+%\setbeamertemplate{footline}{%
+%    \raisebox{5pt}{\makebox[\paperwidth]{\hfill\makebox[20pt]{\color{gray}
+%          \scriptsize\insertframenumber}}}\hspace*{5pt}}
+%}
