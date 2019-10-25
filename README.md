@@ -1,6 +1,7 @@
 # Ten things I wish I knew when starting my PhD in Statistics
 
 Slides from a recent talk, `thirteenthings.pdf` (there are more than ten things).
+The slides are best viewed with Adobe Acrobat, in order to watch the animations/demos.
 
 ## Building the slides
 
